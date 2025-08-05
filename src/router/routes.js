@@ -1,9 +1,11 @@
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: () => import('src/pages/HomePage.vue'),
-  },
+  path: '/',
+  component: () => import('layouts/MainLayout.vue'),
+  children: [
+    { path: '', component: () => import('pages/IndexPage.vue') }
+  ]
+},
   {
     path: '/board/:id',
     name: 'board',
