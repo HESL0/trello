@@ -1,4 +1,4 @@
-<template>
+ <template>
   <div class="board">
     <BoardHeader :title="board.title" @edit-title="editTitle" />
 
