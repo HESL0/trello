@@ -27,7 +27,7 @@
 <script setup>
 import { ref } from 'vue'
 import BoardHeader from './BoardHeader.vue'
-import List from '../list/List.vue'
+import List from '../list/AppList.vue'
 import { useBoardStore, useListStore, useCardStore } from 'src/store'
 
 const props = defineProps({
@@ -48,7 +48,6 @@ function addList() {
   listStore.addList(props.board.id, newListTitle.value.trim())
   newListTitle.value = ''
 }
-
 function addCard(listId, content) {
   cardStore.addCard(props.board.id, listId, content)
 }
