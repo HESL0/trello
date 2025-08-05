@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia'
-import { ref } from 'vue'
 import { useBoardStore } from './boardStore'
 
 export const useListStore = defineStore('list', () => {
