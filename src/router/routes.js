@@ -1,18 +1,14 @@
 const routes = [
   {
     path: '/',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
-    ]
+    name: 'home',
+    component: () => import('src/pages/HomePage.vue'),
   },
-
-  // Always leave this as last one,
-  // but you can also remove it
   {
-    path: '/:catchAll(.*)*',
-    component: () => import('pages/ErrorNotFound.vue')
-  }
+    path: '/board/:id',
+    name: 'board',
+    component: () => import('src/pages/BoardPage.vue'),
+    props: true,
+  },
 ]
-
 export default routes
