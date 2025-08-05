@@ -7,7 +7,7 @@
     />
 
     <div class="cards">
-      <BoardCard
+      <AppCard
         v-for="card in list.cards"
         :key="card.id"
         :card="card"
@@ -28,7 +28,7 @@
 <script setup>
 import { ref } from 'vue'
 import ListHeader from './ListHeader.vue'
-import BoardCard from '../card/BoardCard.vue'
+import AppCard from '../card/AppCard.vue'
 import { useCardStore, useListStore } from 'src/store'
 
 const props = defineProps({
@@ -36,7 +36,7 @@ const props = defineProps({
   boardId: Number
 })
 
-const emit = defineEmits(['add-card', 'edit-list', 'delete-list'])
+// const emit = defineEmits(['add-card', 'edit-list', 'delete-list'])
 
 const cardStore = useCardStore()
 const listStore = useListStore()

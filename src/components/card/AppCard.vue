@@ -5,9 +5,9 @@
 </template>
 
 <script setup>
-const props = defineProps({
-  card: Object
-})
+// const props = defineProps({
+//   card: Object
+// })
 </script>
 
 <style scoped>

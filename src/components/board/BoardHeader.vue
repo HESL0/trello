@@ -6,11 +6,11 @@
 </template>
 
 <script setup>
-const props = defineProps({
-  board: Object
-})
+// const props = defineProps({
+//   board: Object
+// })
 
-const emit = defineEmits(['add-list'])
+// const emit = defineEmits(['add-list'])
 </script>
 
 <style scoped>

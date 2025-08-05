@@ -5,7 +5,7 @@
 <script setup>
 import { useRoute } from 'vue-router'
 import { useBoardStore } from 'src/store'
-import TrelloBoard from 'src/components/board/TrelloBoard.vue'
+import TrelloBoard from 'src/components/board/BoardList.vue'
 import { computed } from 'vue'
 
 const route = useRoute()
